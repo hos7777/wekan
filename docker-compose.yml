@@ -6,7 +6,7 @@ services:
       - wekandb
     environment:
       - MONGO_URL=mongodb://wekandb/wekan
-      - ROOT_URL=http://wekan.hos777.org:8989
+      - ROOT_URL=http://wekan.hos777.net:8989
     ports:
       - 8989:8080
 
