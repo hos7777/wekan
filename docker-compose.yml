@@ -6,11 +6,10 @@ services:
       - wekandb
     environment:
       - MONGO_URL=mongodb://wekandb/wekan
-      - ROOT_URL=http://wekan.hos777.org:8989 # ポートは好きなポートに
+      - ROOT_URL=http://wekan.hos777.org:8989
     ports:
-    #wekanは8080ポートを開放しているため、コンテナのポート番号は8080にする必要がある。
-      - 8989:8080 # 外部公開ポート番号 : コンテナのポート番号
-    # コンテナが止まった時に再起動する
+      - 8989:8080
+
     restart: always 
 
 
